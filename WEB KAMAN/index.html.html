@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d5592">
+
+  <title>KAMAN COFFEE | Good Coffee, Better Days</title>
+  <meta
+    name="description"
+    content="Nikmati kopi berkualitas, minuman segar, dan makanan lezat di KAMAN COFFEE."
+  >
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- File CSS -->
+  <link rel="stylesheet" href="style.css.css">
+
+  <!-- File JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <a class="logo" href="#home" aria-label="KAMAN COFFEE - Beranda">
+      <img
+        src="WhatsApp Image 2026-10-11 at 02.34.32.jpeg"
+        alt="Logo KAMAN COFFEE"
+      >
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Buka navigasi"
+      aria-controls="nav"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">Good Coffee, Better Days</div>
+
+        <h1>Temukan<br>Rasa Favoritmu.</h1>
+
+        <p>
+          Secangkir cerita, suasana nyaman, dan rasa yang selalu
+          ingin kamu ulangi. Selamat datang di KAMAN COFFEE.
+        </p>
+
+        <button class="order hero-order" data-scroll="#menu">
+          Jelajahi Menu →
+        </button>
+      </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <div class="features">
+      <div class="feature">
+        <span class="ico">☕</span>
+        <div>
+          <strong>Kopi Berkualitas</strong>
+          <small>Dipilih dengan sepenuh hati</small>
+        </div>
+      </div>
+
+      <div class="feature">
+        <span class="ico">❋</span>
+        <div>
+          <strong>Bahan Fresh</strong>
+          <small>Dibuat segar setiap hari</small>
+        </div>
+      </div>
+
+      <div class="feature">
+        <span class="ico">☺</span>
+        <div>
+          <strong>Suasana Nyaman</strong>
+          <small>Tempat untuk bersantai</small>
+        </div>
+      </div>
+
+      <div class="feature">
+        <span class="ico">⌖</span>
+        <div>
+          <strong>Good Vibes</strong>
+          <small>Temani harimu lebih baik</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow section-eyebrow">
+            Pilihan dari KAMAN
+          </div>
+
+          <h2>Menu Favorit Kami</h2>
+
+          <p>
+            Dari kopi klasik hingga camilan lezat,
+            semua dibuat untuk menemani harimu.
+          </p>
+        </div>
+
+        <!-- FILTER MENU -->
+        <div class="filters">
+          <button class="filter active" data-filter="all">Semua</button>
+          <button class="filter" data-filter="kopi">Kopi</button>
+          <button class="filter" data-filter="nonkopi">Non Kopi</button>
+          <button class="filter" data-filter="makanan">Makanan</button>
+        </div>
+      </div>
+
+      <!-- KATEGORI KOPI -->
+      <div class="category" data-category="kopi">
+        <h3 class="category-title">Kopi</h3>
+
+        <div class="grid">
+          <article class="card">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80"
+              alt="Iced Latte"
+            >
+            <div class="card-body">
+              <h4>Iced Latte</h4>
+              <p class="desc">Espresso dan susu segar yang lembut.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 18.000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80"
+              alt="Americano"
+            >
+            <div class="card-body">
+              <h4>Americano</h4>
+              <p class="desc">Kopi hitam klasik dengan rasa yang kuat.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 15.000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=700&q=80"
+              alt="Cappuccino"
+            >
+            <div class="card-body">
+              <h4>Cappuccino</h4>
+              <p class="desc">Espresso dengan susu dan foam lembut.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 20.000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              loading="lazy"
+              src="MOCACCINO & C.MACHIATO.png"
+              alt="Caramel Macchiato"
+            >
+            <div class="card-body">
+              <h4>Caramel Macchiato</h4>
+              <p class="desc">Perpaduan espresso, susu, dan karamel.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 26.000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              loading="lazy"
+              src="Pandan & Klepon.png"
+              alt="Kopi Pandan"
+            >
+            <div class="card-body">
+              <h4>Kopi Pandan</h4>
+              <p class="desc">Latte creamy dengan aroma hazelnut.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 22.000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80"
+              alt="Kopi Susu Aren"
+            >
+            <div class="card-body">
+              <h4>Kopi Susu Aren</h4>
+              <p class="desc">Kopi susu dengan manis gula aren.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 18.000</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- KATEGORI NON KOPI -->
+      <div class="category" data-category="nonkopi">
+        <h3 class="category-title">Non Kopi</h3>
+
+        <div class="grid">
+          <article class="card">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=700&q=80"
+              alt="Matcha Latte"
+            >
+            <div class="card-body">
+              <h4>Matcha Latte</h4>
+              <p class="desc">Matcha dengan susu creamy dan lembut.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 20.000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=80"
+              alt="Chocolate Frappe"
+            >
+            <div class="card-body">
+              <h4>Chocolate Frappe</h4>
+              <p class="desc">Cokelat dingin yang manis dan creamy.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 20.000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1558857563-b371033873b8?auto=format&fit=crop&w=700&q=80"
+              alt="Taro Latte"
+            >
+            <div class="card-body">
+              <h4>Taro Latte</h4>
+              <p class="desc">Minuman taro dengan rasa manis lembut.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 18.000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=700&q=80"
+              alt="Strawberry Milk"
+            >
+            <div class="card-body">
+              <h4>Strawberry Milk</h4>
+              <p class="desc">Susu segar dengan sentuhan stroberi.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 18.000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=700&q=80"
+              alt="Lemon Tea"
+            >
+            <div class="card-body">
+              <h4>Lemon Tea</h4>
+              <p class="desc">Teh segar dengan lemon yang menyegarkan.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 15.000</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- KATEGORI MAKANAN -->
+      <div class="category" data-category="makanan">
+        <h3 class="category-title">Makanan</h3>
+
+        <div class="grid">
+          <article class="card">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80"
+              alt="Butter Croissant"
+            >
+            <div class="card-body">
+              <h4>Butter Croissant</h4>
+              <p class="desc">Pastry renyah dengan lapisan buttery.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 15.000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80"
+              alt="Chocolate Cake"
+            >
+            <div class="card-body">
+              <h4>Chocolate Cake</h4>
+              <p class="desc">Kue cokelat lembut untuk teman ngopi.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 18.000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+              alt="Chicken Burger"
+            >
+            <div class="card-body">
+              <h4>Chicken Burger</h4>
+              <p class="desc">Burger gurih dengan sayuran segar.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 25.000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80"
+              alt="French Fries"
+            >
+            <div class="card-body">
+              <h4>French Fries</h4>
+              <p class="desc">Kentang goreng renyah dan gurih.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 18.000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=700&q=80"
+              alt="Chicken Wings"
+            >
+            <div class="card-body">
+              <h4>Chicken Wings</h4>
+              <p class="desc">Sayap ayam berbumbu, cocok untuk berbagi.</p>
+              <div class="card-bottom">
+                <span class="price">Rp 22.000</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section class="about" id="about">
+      <img
+        loading="lazy"
+        src="WhatsApp Image 2026-10-11 at 01.45.09.jpeg"
+        alt="Suasana interior coffee shop"
+      >
+
+      <div class="about-content">
+        <div class="eyebrow section-eyebrow">Cerita Kami</div>
+
+        <h2>Kopi Enak, Hari Lebih Baik.</h2>
+
+        <p>
+          KAMAN COFFEE adalah tempat untuk menikmati kopi,
+          bertukar cerita, menyelesaikan pekerjaan, atau sekadar
+          mengambil jeda dari kesibukan. Kami percaya, momen
+          sederhana bisa terasa istimewa dengan secangkir kopi
+          yang tepat.
+        </p>
+
+        <button class="order" data-scroll="#menu">
+          Temukan Menu Favorit →
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div>
+      <a
+        class="footer-logo"
+        href="#home"
+        aria-label="Kembali ke beranda"
+      >
+        <img
+          src="WhatsApp Image 2026-10-11 at 01.40.18.jpeg"
+          alt="KAMAN COFFEE"
+        >
+      </a>
+
+      <p>Good Coffee, Better Days.</p>
+    </div>
+
+    <p>kamancoffee@gmail.com</p>
+    <p>Jl. Wr Supratman No.189 Kesiman, Denpasar Timur, BALI</p>
+    <p>© 2026 KAMAN COFFEE.</p>
+  </footer>
+
+  <!-- NOTIFIKASI KERANJANG -->
+  <div
+    class="cart-note"
+    id="cartNote"
+    role="status"
+    aria-live="polite"
+    hidden
+  >
+    🛒 Keranjang: <span id="cartCount">0</span> item
+  </div>
+</body>
+</html>
